@@ -21,7 +21,7 @@
 
 $log_path = '/var/log/yiban-byr-gitlab-webhook-autopoll.log';
 $exec_pair = [
-    "a-hash-key" => "cd /path/to/the/project && git pull"
+    "secret-token" => "cd /path/to/the/project && git pull"
 ];
 function request_log($txt) {
     global $log_path;
