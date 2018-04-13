@@ -1,7 +1,7 @@
 <?php
 /*
 
-    yiban-byr-gitlab-webhook-autopull
+    gitlab-webhook-autopull
     Copyright (C) 2018  FredericDT
 
     This program is free software: you can redistribute it and/or modify
@@ -19,7 +19,7 @@
     
 */
 
-$log_path = '/var/log/yiban-byr-gitlab-webhook-autopoll.log';
+$log_path = '/var/log/gitlab-webhook-autopoll.log';
 $exec_pair = [
     "secret-token" => "cd /path/to/the/project && git pull"
 ];
