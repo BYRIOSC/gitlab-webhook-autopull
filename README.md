@@ -6,9 +6,11 @@ A php tiny http server for auto pull with a git remote
 
 1. clone this repo.
 
-2. go to the repo's settings page and set "URL" and "Secret Token"
+2. go to the repo's settings page and set "URL", "Secret Token"
 
-3. edit 'yiban.byr.gitlab.webhook.autopull.php' as follows
+3. copy the server's public_key to git_remote's integration_key field
+
+4. edit 'yiban.byr.gitlab.webhook.autopull.php' as follows
 ```
 $exec_pair = [
     "secret-token" 
@@ -17,7 +19,7 @@ $exec_pair = [
 ];
 ```
 
-4. exec the following command as daemon
+5. exec the following command as daemon
 
 ```
 php -S listen.to.address:port yiban.byr.gitlab.webhook.autopull.php
