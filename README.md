@@ -1,4 +1,4 @@
-# yiban-byr-gitlab-webhook-autopull
+# gitlab-webhook-autopull
 
 A php tiny http server for auto pull with a git remote
 
@@ -10,7 +10,7 @@ A php tiny http server for auto pull with a git remote
 
 3. copy the server's public_key to git_remote's integration_key field
 
-4. edit 'yiban.byr.gitlab.webhook.autopull.php' as follows
+4. edit 'gitlab.webhook.autopull.php' as follows
 ```
 $exec_pair = [
     "secret-token" 
@@ -22,5 +22,5 @@ $exec_pair = [
 5. exec the following command as daemon
 
 ```
-php -S listen.to.address:port yiban.byr.gitlab.webhook.autopull.php
+php -S listen.to.address:port gitlab.webhook.autopull.php
 ```
